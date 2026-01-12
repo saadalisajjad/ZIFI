@@ -1,0 +1,512 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.section {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-button {
+  position: absolute;
+  right: 60px;
+  top: 503px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-button:hover {
+  transform: scale(1.05);
+  border: none;
+}
+
+.navbar-button:focus,
+.navbar-button:focus-visible {
+  outline: none;
+}
+
+.go-download-button {
+  position: absolute;
+  right: 60px;
+  top: 503px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.go-download-button:hover {
+  transform: scale(1.05);
+  border: none;
+}
+
+.go-download-button:focus,
+.go-download-button:focus-visible {
+  outline: none;
+}
+
+.navbar-container-main {
+  position: relative;
+}
+.more-info-button:hover {
+  color: #ffffff;
+  border: none;
+}
+
+.more-info-button:focus,
+.more-info-button:focus-visible {
+  outline: none;
+}
+
+.more-info-button {
+  position: absolute;
+  bottom: 460px;
+  right: 50px;
+  background: transparent;
+  border: none;
+  color: #777777;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 10px;
+  z-index: 100;
+}
+
+.more-info-button:hover {
+  color: #ffffff;
+}
+
+.more-information-section {
+  height: 80vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 29px;
+}
+
+
+
+
+
+
+
+.speed-wrapper {
+  position: relative;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+}
+
+/* 🔴 BLUR BACKGROUND NUMBER */
+.bg-speed {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 320px;
+  font-weight: 700;
+  color: white;
+
+  opacity: 0;
+  filter: blur(40px);
+  transition: 0.6s ease;
+  pointer-events: none;
+}
+
+.bg-speed.active {
+  opacity: 0.08;
+}
+
+/* 🟢 FOREGROUND */
+.fg-content {
+  position: relative;
+  z-index: 5;
+  color: white;
+  height: 100%;
+}
+
+/* CENTER */
+.center-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-speed {
+  font-size: 140px;
+  font-weight: 300;
+}
+
+.unit {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #aaa;
+}
+
+/* GO BUTTON */
+.go-btn {
+  margin-top: 25px;
+  padding: 10px 36px;
+  background: transparent;
+  border: 1px solid #777;
+  color: white;
+  cursor: pointer;
+}
+
+/* RIGHT PANEL */
+.speed-side {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.side-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.side-item p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #999;
+  margin: 0;
+}
+
+.side-item span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.download span,
+.download .arrow {
+  color: #00ff6a;
+}
+
+.upload span,
+.upload .arrow {
+  color: #9b5cff;
+}
+
+.arrow {
+  font-size: 22px;
+}
+
+
+.more-info {
+  position: absolute;
+  bottom: 40px;
+  background: none;
+  border: none;
+  color: #777;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.more-information-details-section {
+  display: flex;
+  margin-bottom: 29px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+/* =========================
+   RESPONSIVE FIXES ONLY
+   ========================= */
+
+/* -------- calculation -------- */
+
+@media (max-width: 1200px) {
+
+  .calculation-digit-container {
+    font-size: 200px;
+  }
+
+  .calculation-digit-container-main {
+    width: 420px;
+  }
+
+  .speed-number {
+    font-size: 82px;
+  }
+
+  .speed-info-wrapper {
+    right: 30px;
+    gap: 48px;
+  }
+
+  .info-value,
+  .info-value-highlight,
+  .info-value-1,
+  .info-value-2,
+  .more-information-date-1,
+  .more-information-time-1 {
+    margin-left: 180px;
+  }
+}
+
+
+/* -------- nav-bar -------- */
+@media (max-width: 992px) {
+
+  .navbar-container-main {
+    padding: 0 25px;
+  }
+
+  .navbar-desc {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .calculation-container-main {
+    justify-content: center;
+  }
+
+  .calculation-digit-container {
+    font-size: 160px;
+    text-align: center;
+  }
+
+  .speed-info-wrapper {
+    position: static;
+    transform: none;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .speed-row {
+    gap: 16px;
+  }
+}
+
+
+/* -------- Mobile -------- */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar-container-main {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar-logo-wrapper,
+  .navbar-flag-wrapper {
+    justify-content: center;
+  }
+
+  /* MAIN SPEED */
+  .main-speed {
+    font-size: 90px;
+  }
+
+  .unit {
+    font-size: 14px;
+  }
+
+  /* SPEED PANEL */
+  .speed-info-wrapper {
+    gap: 36px;
+  }
+
+  .speed-number {
+    font-size: 64px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo,
+  .footer-image {
+    margin: 40px 0;
+  }
+
+  /* INFO SECTION */
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-value,
+  .info-value-highlight,
+  .info-value-1,
+  .info-value-2 {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}
+
+
+/* -------- Small Mobile -------- */
+@media (max-width: 480px) {
+
+  .navbar-container-main {
+    margin-top: 12px;
+  }
+
+  .navbar-desc {
+    display: none;
+  }
+
+  .mob-navbar-desc {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 50px;
+  }
+
+  .navbar-flag {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  .navbar-logo {
+    width: 48.49px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  .mob-navbar-container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .mob-navbar-container-main .navbar-logo-wrapper {
+    margin-left: auto;
+  }
+
+  .mob-navbar-container-main .navbar-flag-wrapper {
+    margin-left: auto;
+  }
+
+  
+  .footer-logo {
+    display: none;
+  }
+
+  .mob-footer-logo {
+    display: block;
+    max-height: 20px;
+    max-width: 84.44px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer-image {
+    max-height: 20px;
+    height: 100%;
+
+  }
+
+  .ztr-logo {
+    max-width: 58.87px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+  }
+
+  .zimo-logo {
+    max-width: 44.9px;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+  }
+
+
+}
