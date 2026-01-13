@@ -7,9 +7,10 @@ export default function MoreInformationHeading() {
     lg:uppercase
     lg:text-[#8f8f8f]
     lg:font-light
-    lg:tracking-[0.45em]
+    lg:tracking-[0.27em]
     lg:leading-none
-    lg:text-[19px]
+    lg:text-[18px]
+    lg:pt-[60px]
   "
       >
         MORE INFORMATION

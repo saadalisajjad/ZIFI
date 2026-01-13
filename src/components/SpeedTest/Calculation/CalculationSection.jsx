@@ -78,7 +78,7 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
             {/* Go Button */}
             <div className="flex">
               <button
-                className="!bg-transparent !p-0 !rounded-full"
+                className="!bg-transparent !p-0 !rounded-full lg:mt-12 "
                 onClick={() => {
                   if (!calculate) setCalculate(true);
                   setHasCalculated(false);
@@ -99,7 +99,14 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
         {/* Desktop Button */}
         <div className="flex flex-row justify-end hidden lg:flex">
           <button
-            className={`!bg-transparent uppercase transition-opacity duration-700 ${
+            className={`!bg-transparent uppercase transition-opacity duration-700   className="
+    text-center lg:text-left
+    lg:uppercase
+    lg:text-[#8f8f8f]
+    lg:font-light
+    lg:tracking-[0.23em]
+    lg:leading-none
+    lg:text-[17px]" ${
               showButton && !showMoreInfo
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
