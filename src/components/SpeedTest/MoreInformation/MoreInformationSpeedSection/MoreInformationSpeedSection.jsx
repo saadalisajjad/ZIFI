@@ -1,7 +1,7 @@
 export default function MoreInformationSpeedSection() {
   return (
     <div className="flex flex-col gap-[0px] items-center lg:items-end w-full h-full">
-      <div className="flex flex-col items-end w-full">
+      <div className="flex flex-col items-center lg:items-end w-full">
         <div className="flex flex-col lg:flex-row">
           <span className="text-[80px] lg:text-[160px]">175.21</span>
         <div className="lg:hidden flex justify-center items-center"><span className="uppercase tracking-normal text-[16px]">Download</span></div>
@@ -13,7 +13,7 @@ export default function MoreInformationSpeedSection() {
         <div className="hidden lg:flex pb-[37px] justify-end items-end w-full"><span className="uppercase tracking-normal text-[16px]">Download</span></div>
       </div>
 
-      <div className="flex flex-col items-end w-full">
+      <div className="flex flex-col items-center lg:items-end w-full">
         <div className="flex flex-col lg:flex-row">
           <span className="text-[80px] lg:text-[160px]">175.21</span>
         <div className="lg:hidden flex justify-center items-center"><span className="uppercase tracking-normal text-[16px]">Upload</span></div>
