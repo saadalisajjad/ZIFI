@@ -51,7 +51,7 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center justify-center h-full w-full lg:w-auto">
             <div className="flex">
               <img
                 src="/Mbps.png"
@@ -62,13 +62,21 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
             </div>
 
             {/* Mobile Button */}
-            <div className="flex flex-row justify-end lg:hidden my-[64px]">
+            <div className="flex flex-row justify-end lg:hidden w-full my-[64px] 
+            ">
               <button
-                className={`!bg-transparent uppercase transition-opacity duration-700 ${
-                  showButton && !showMoreInfo
+                className={`!bg-transparent uppercase w-full transition-opacity duration-700 
+                  text-center 
+    !uppercase
+    !text-[#8f8f8f]
+    !font-light
+    !tracking-[0.23em]
+    !leading-none
+    !text-[17px]
+    ${showButton && !showMoreInfo
                     ? "opacity-100 pointer-events-auto"
                     : "opacity-0 pointer-events-none"
-                }`}
+                  }`}
                 onClick={() => setShowMoreInfo(true)}
               >
                 more information
@@ -99,18 +107,19 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
         {/* Desktop Button */}
         <div className="flex flex-row justify-end hidden lg:flex">
           <button
-            className={`!bg-transparent uppercase transition-opacity duration-700   className="
+            className={`!bg-transparent uppercase transition-opacity duration-700  
     text-center lg:text-left
     lg:uppercase
     lg:text-[#8f8f8f]
     lg:font-light
     lg:tracking-[0.23em]
     lg:leading-none
-    lg:text-[17px]" ${
-              showButton && !showMoreInfo
+    lg:text-[17px]"
+    
+    ${showButton && !showMoreInfo
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
-            }`}
+              }`}
             onClick={() => setShowMoreInfo(true)}
           >
             more information
