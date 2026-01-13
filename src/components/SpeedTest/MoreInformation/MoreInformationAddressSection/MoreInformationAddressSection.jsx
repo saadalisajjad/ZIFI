@@ -23,7 +23,7 @@ export default function MoreInformationAddressSection({ sections }) {
             text-[12px] lg:text-[18px]
             text-[#7a7a7a]
             uppercase
-            tracking-[0.2em] lg:tracking-[0.45em]
+            tracking-[0.1em] lg:tracking-[0.20em]
             font-light
             leading-[18px]
           "
