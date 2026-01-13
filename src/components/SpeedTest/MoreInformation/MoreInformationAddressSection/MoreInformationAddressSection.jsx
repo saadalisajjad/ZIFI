@@ -14,9 +14,9 @@ export default function MoreInformationAddressSection({ sections }) {
           icon={section.icon}
           iconAlt={section.iconAlt}
           items={section.data}
-          containerClassName="max-w[420px] lg:max-w-[620px]"
-          iconClassName="w-[40px] h-[40px]"
-          iconContainerClassName="w-[40px] mt-[2px] flex items-center"
+          containerClassName="max-w-[420px] lg:max-w-[620px]"
+          iconClassName="w-[40px] h-[40px] object-contain object-center"
+          iconContainerClassName="mx-auto w-[40px] h-auto mt-[2px]"
 
           /* 🔴 EXACT LABEL STYLE (mobile fix added) */
           labelClassName="

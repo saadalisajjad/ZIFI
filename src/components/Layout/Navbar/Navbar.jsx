@@ -4,7 +4,7 @@ export default function Navbar({ displayLayout, className }) {
   return (
     <Section className={`z-999999 ${className}`}>
       <div className="flex flex-row justify-between mr-[18.03px] lg:mx-[50px] mt-[13px] lg:mt-[40px]">
-        <div className="mx-auto lg:mx-0">
+        <div className="mx-auto pl-[40px] lg:pl-0 lg:mx-0">
           <img src="/zifi.png" alt="Logo" className="navbar-logo" />
         </div>
 

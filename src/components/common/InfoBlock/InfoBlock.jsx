@@ -13,7 +13,7 @@ export default function InfoBlock({
     <div className={`flex items-start gap-6 ${containerClassName}`}>
 
       {/* Icon */}
-      <div className={`flex items-start flex-shrink-0 ${iconContainerClassName}`}>
+      <div className={`flex flex-shrink-0 self-center ${iconContainerClassName}`}>
         {icon ? (
           <img src={icon} alt={iconAlt} className={iconClassName} />
         ) : (
