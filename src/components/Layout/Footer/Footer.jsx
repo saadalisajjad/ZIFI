@@ -22,7 +22,7 @@ export default function Footer({className}) {
         <img
           src="/logo.png"
           alt="logo"
-          className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[18px] lg:max-h-[36px] h-full mr-[15px] "
+          className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[22px] lg:max-h-[36px] h-full mr-[15px] "
         />
 
         <img
