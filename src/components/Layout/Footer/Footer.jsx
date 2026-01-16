@@ -19,11 +19,14 @@ export default function Footer({className}) {
           height="35.03"
           className="max-w-[58.87px] lg:max-w-[103.11px] w-full max-h-[20px] lg:max-h-[36px] h-full"
         />
-        <img
-          src="/logo.png"
-          alt="logo"
-          className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[22px] lg:max-h-[36px] h-full mr-[15px] "
-        />
+     <img
+  src="/logo.png"
+  alt="logo"
+  width="69.01"
+  height="39.03"
+  className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[22px] lg:max-h-[36px] h-full mr-[20px] "
+/>
+
 
         <img
           src="/zimo.png"
