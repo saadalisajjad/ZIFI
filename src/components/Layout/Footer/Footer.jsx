@@ -29,7 +29,7 @@ export default function Footer({className, displayLayout}) {
 
 
         <img
-          src="/zimo.png"
+          src={displayLayout ? "/zimo.png" : "/black/zimo.svg"}
           alt="Zimo logo"
           width="70.91"
           height="40.03"

@@ -54,7 +54,7 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
           <div className="flex flex-col items-center justify-center h-full w-full lg:w-auto">
             <div className="flex">
               <img
-                src="/Mbps.png"
+                src="/black/MBPS.svg"
                 alt="Megabits Per Second"
                 width="64"
                 height="64"
