@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose, children, displayLayout }) => {
         >
         {displayLayout && <Navbar displayLayout={displayLayout} className="!h-auto" />}
         {children}
-      {displayLayout && <Footer className="!h-auto" />}
+      {displayLayout && <Footer className="!h-auto" displayLayout={displayLayout} />}
       </div>
     </div>,
     document.getElementById("modal-root")

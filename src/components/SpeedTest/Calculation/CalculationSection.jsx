@@ -94,7 +94,7 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
                 }}
               >
                 <img
-                  src={calculate ? "/download.svg" : "/go.svg"}
+                  src={calculate ? "/download.svg" : "/black/go.svg"}
                   alt="Go Button"
                   width="64"
                   height="64"

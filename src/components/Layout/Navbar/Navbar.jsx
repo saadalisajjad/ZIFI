@@ -5,10 +5,10 @@ export default function Navbar({ displayLayout, className }) {
     <Section className={`z-999999 ${className}`}>
       <div className="flex flex-row justify-between mr-[18.03px] lg:mx-[50px] mt-[13px] lg:mt-[40px]">
         <div className="mx-auto pl-[40px] lg:pl-0 lg:mx-0">
-          <img src="/zifi.png" alt="Logo" className="navbar-logo" />
+          <img src={displayLayout ? '/zifi.png' : "/black/zifi.svg"} alt="Logo" className="navbar-logo" />
         </div>
 
-        <div className="hidden lg:flex items-center text-white uppercase tracking-[0.4em] text-[12px] font-light">
+        <div className={`hidden lg:flex items-center ${displayLayout ? 'text-white' :'text-black'} uppercase tracking-[0.4em] text-[12px] font-light`}>
           Your Internet Speed
         </div>
 
@@ -17,7 +17,7 @@ export default function Navbar({ displayLayout, className }) {
         </div>
       </div>
       {!displayLayout && (
-        <div className="lg:hidden flex justify-center mx-auto mt-[50px] text-white uppercase tracking-[0.35em] text-[11px] font-light">
+        <div className="lg:hidden flex justify-center mx-auto mt-[50px] text-black uppercase tracking-[0.35em] text-[11px] font-light">
           Your Internet Speed
         </div>
       )}

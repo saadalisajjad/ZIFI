@@ -1,10 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
-  color: #ffffff;
-  background-color: #000000;
+  color-scheme: light dark;
 }
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .speed-wrapper {
+    background: white;
+  }
+
+  .fg-content,
+  .bg-speed,
+  .go-btn,
+  .more-info-button {
+    color: black;
+  }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .speed-wrapper {
+    background: black;
+  }
+
+  .fg-content,
+  .bg-speed,
+  .go-btn,
+  .more-info-button {
+    color: white;
+  }
+  
+}
+
 
 
 a {

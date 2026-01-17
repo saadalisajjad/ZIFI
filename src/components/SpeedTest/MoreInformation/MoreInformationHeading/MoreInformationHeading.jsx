@@ -7,7 +7,6 @@ export default function MoreInformationHeading() {
         text-up
         leading-none
         tracking-[0.20em]
-
         lg:text-left
         lg:uppercase
         lg:text-[#8f8f8f]
