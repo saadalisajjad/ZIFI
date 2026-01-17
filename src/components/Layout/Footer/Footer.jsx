@@ -1,8 +1,8 @@
 import Section from "../../common/Section/Section";
 
-export default function Footer({className, displayLayout}) {
+export default function Footer({ className, displayLayout }) {
   return (
-    <Section className={`flex flex-row justify-between mb-[24px] lg:mb-[33px] ${className}`}>
+    <Section className={`flex flex-row justify-between pb-[24px] lg:pb-[33px] ${className}`}>
       <div className="lg:ml-[38px] w-full hidden lg:flex items-center">
         <img
           src={displayLayout ? '/logo.png' : "/black/logo.svg"}
@@ -19,13 +19,13 @@ export default function Footer({className, displayLayout}) {
           height="35.03"
           className="max-w-[58.87px] lg:max-w-[103.11px] w-full max-h-[20px] lg:max-h-[36px] h-full"
         />
-     <img
-  src={displayLayout ? '/logo.png' : "/black/logo.svg"}
-  alt="logo"
-  width="69.01"
-  height="39.03"
-  className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[22px] lg:max-h-[36px] h-full mr-[20px] object-contain"
-/>
+        <img
+          src={displayLayout ? '/logo.png' : "/black/logo.svg"}
+          alt="logo"
+          width="69.01"
+          height="39.03"
+          className="max-w-[59px] lg:max-w-[148px] w-full flex lg:hidden max-h-[22px] lg:max-h-[36px] h-full mr-[20px] object-contain"
+        />
 
 
         <img
