@@ -11,7 +11,10 @@ function App() {
     <>
       {!isModalOpen && <Navbar />}
       <SpeedTest setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
-      {!isModalOpen && <Footer />}
+      {!isModalOpen && <div className="mt-auto h-full">
+        <Footer />
+        </div>
+        }
     </>
   );
 }
