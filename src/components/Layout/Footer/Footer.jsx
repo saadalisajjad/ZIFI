@@ -1,8 +1,8 @@
 import Section from "../../common/Section/Section";
 
-export default function Footer({ className, displayLayout }) {
+export default function Footer({ className = '', displayLayout }) {
   return (
-    <Section className={`flex flex-row justify-between pb-[24px] lg:pb-[33px] ${className}`}>
+    <Section className={`flex flex-row justify-between  ${className}`}>
       <div className="lg:ml-[38px] w-full hidden lg:flex items-center">
         <img
           src={displayLayout ? '/logo.png' : "/black/logo.svg"}

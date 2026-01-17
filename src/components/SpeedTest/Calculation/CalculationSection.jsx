@@ -42,7 +42,7 @@ export default function CalculationSection({ showMoreInfo, setShowMoreInfo }) {
   }, [calculate]);
 
   return (
-    <Section className="flex justify-center lg:justify-end items-center !h-[85vh] w-full">
+    <Section className="flex justify-center lg:justify-end items-center !h-[80vh] lg:!h-[86vh] w-full">
       <div className="lg:mr-[50px] w-full">
         <div className="flex flex-col lg:flex-row items-center justify-end w-full">
           <div className="flex flex-row justify-center lg:justify-end w-full">
